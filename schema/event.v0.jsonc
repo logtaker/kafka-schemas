@@ -1,0 +1,21 @@
+{
+    // Timestamp should be formatted in ISO 8601 or RFC3339 format.
+    "timestamp": "YYYYMMDDTHH:mm:ssZ",
+    // Message is the main message that will be logged
+    "message": "string",
+    // Level state the current log level.
+    // 0 - debug
+    // 1 - info
+    // 2 - warning
+    // 3 - error
+    // 4 - fatal
+    "level": 1,
+    // Extras is a Map<string, any> type that can contains anything.
+    "extras": {
+        "string": "any",
+        "string2": 123,
+        "string3": true,
+        "string4": [],
+        "string5": {}
+    }
+}
