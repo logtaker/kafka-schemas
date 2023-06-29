@@ -67,7 +67,7 @@ func TestEvent(t *testing.T) {
 			t.Errorf("unexpected error: %s", err.Error())
 		}
 
-		expected := `\x84\xa9timestamp\xd6\xff\\\x87\x8a4\xa7message\xbbLorem ipsum dolor sit amet!\xa5level\xcc\x02\xa6extras\x82\xaacontextKey\xa3chi\xaccontextValue\xa4horn`
+		expected := "\x84\xa9timestamp\xd6\xff\\\x87\x8a4\xa7message\xbbLorem ipsum dolor sit amet!\xa5level\xcc\x02\xa6extras\x82\xaacontextKey\xa3chi\xaccontextValue\xa4horn"
 		if string(out) != expected {
 			t.Errorf("expecting out to be %q, got %q", string(expected), string(out))
 		}
